@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Asveora Shell v0.5.0</title>
+
+	<link rel="stylesheet" href="assets/css/client.css">
+</head>
+
+<body>
+
+	<!-- NAVBAR -->
+	<div id="client-navbar">
+
+		<img class="logo-btn" src="assets/images/asv-logo-white.svg" />
+
+		<button class="nav-btn home-btn">Home</button>
+		<button class="nav-btn profile-btn">Profile</button>
+
+		<div class="dropdown">
+			<button class="dropdown-btn">Switch ▼</button>
+			<div class="dropdown-content" id="switch-menu">
+				<button class="switch-profile-btn">Switch Profile</button>
+				<button class="switch-landhub-btn">Switch LandHub</button>
+			</div>
+		</div>
+
+		<button class="nav-btn reset-btn">Reset</button>
+
+		<div id="tabs-container">
+			<button class="tab-btn active-tab" data-url="https://www.asveora.social/">
+				Start <span class="tab-close">×</span>
+			</button>
+		</div>
+
+		<button class="add-tab-btn">+Tab</button>
+
+		<div class="spacer"></div>
+
+		<button class="nav-btn about-btn">About</button>
+
+	</div>
+
+	<!-- VIEWPORT -->
+	<iframe id="viewer" src="https://www.asveora.social/"></iframe>
+
+	<!-- MODAL -->
+	<div id="modal" class="modal hidden">
+		<div class="modal-box">
+
+			<h3 id="modal-title"></h3>
+
+			<div id="modal-body"></div>
+
+			<input id="modal-input" type="text" />
+
+			<div class="modal-actions">
+				<button id="modal-no">No</button>
+				<button id="modal-yes">Yes</button>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- SCRIPTS -->
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>

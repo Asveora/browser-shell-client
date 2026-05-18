@@ -1,0 +1,307 @@
+/*
+========================================
+UNIVERSAL SELECTOR
+========================================
+The properties listed under this universal selector 
+apply to ALL elements of the client. Keep this in
+mind before changing any of the assigned values.
+*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html, body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	font-family:Arial, sans-serif;
+	background:#111315;
+	color:#ffffff;
+}
+
+a{
+	text-decoration: none;
+	color: #7d7dff;
+}
+
+a:hover{
+	text-decoration: underline;
+	text-decoration-color: #7d7dff;
+	text-decoration-thickness: 2px;
+}
+
+/*
+========================================
+CLIENT SHELL MODAL
+========================================
+The properties that determine the size, color,
+scale, and position of the client's modal pop
+up where users will input UX information.
+*/
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-box {
+    background: #1b1d21;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #2b2f36;
+}
+
+.modal-box input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #2b2f36;
+    color: white;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.modal-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #2b2f36;
+    color: white;
+}
+
+/*
+========================================
+CLIENT NAVBAR
+========================================
+These properties correspond to the sizing, shape,
+color, layout, and visual rendering of navigation
+bar of the client. It is the primary component.
+*/
+
+#client-navbar{
+	width:100%;
+	height:56px;
+	background:#1b1d21;
+	border-bottom:1px solid #2b2f36;
+	display:flex;
+	align-items:center;
+	padding:0 10px;
+	gap:8px;
+	flex-shrink:0;
+}
+
+#client-navbar img{
+	height:34px;
+	cursor:pointer;
+}
+
+/*
+This manages the empty space between the left
+and right side buttons of the navbar. Without
+this, all of the options will be left-aligned.
+*/
+
+.spacer{
+	flex:1;
+}
+
+/*
+========================================
+NAVBAR BUTTONS
+========================================
+These properties correspond to the sizing, shape,
+color, layout, and visual rendering of the buttons 
+that appear in the navbar.
+*/
+
+.nav-btn,
+.dropdown-btn,
+.tab-btn,
+.add-tab-btn,
+.close-tab-btn{
+	height:36px;
+	border:none;
+	border-radius:6px;
+	background:#2b2f36;
+	color:#ffffff;
+	padding:0 14px;
+	cursor:pointer;
+	font-size:14px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	transition:background 0.2s ease;
+}
+
+.nav-btn:hover,
+.dropdown-btn:hover,
+.tab-btn:hover,
+.add-tab-btn:hover,
+.close-tab-btn:hover{
+	background:#3a4049;
+}
+
+/*
+This manages the changing state of the 
+tab that is currently active so the end
+user can tell which tab is presently
+selected from the navbar.
+*/
+
+.tab-btn.active-tab{
+	background:#5a7cff;
+	color:#ffffff;
+}
+
+/*
+========================================
+DROPDOWN SWITCH MENU
+========================================
+These properties correspond to the sizing, shape,
+color, layout, and visual rendering of the drop 
+down menu that holds switching options.
+*/
+
+.dropdown{
+	position:relative;
+	height:36px;
+	display:flex;
+	align-items:center;
+}
+
+.dropdown-btn{
+	height:36px;
+}
+
+/* MENU CLASS */
+
+.dropdown-content{
+	display:none;
+
+	position:absolute;
+	top:100%;
+	left:0;
+
+	min-width:190px;
+
+	background:#20242a;
+	border:1px solid #323842;
+	border-radius:6px;
+
+	overflow:hidden;
+	z-index:999;
+
+	padding:4px 0;
+	margin-top:4px;
+}
+
+/* SHOW MENU CLASS */
+
+.dropdown-content.show{
+	display:block;
+}
+
+/* MENU BUTTONS CLASS */
+
+.dropdown-content button{
+	width:100%;
+	text-align:left;
+
+	padding:12px;
+
+	background:none;
+	border:none;
+
+	color:#ffffff;
+	cursor:pointer;
+	font-size:14px;
+}
+
+.dropdown-content button:hover{
+	background:#323842;
+}
+
+/*
+========================================
+TABS
+========================================
+These properties correspond to the sizing, shape,
+color, layout, and visual rendering of the tabs
+that appear in the navigatin bar.
+*/
+
+#tabs-container{
+	display:flex;
+	align-items:center;
+	gap:6px;
+	margin-left:10px;
+	overflow-x:auto;
+}
+
+.tab-btn{
+	position:relative;
+	padding-right:28px;
+}
+
+/* ACTIVE TAB */
+
+.tab-btn.active-tab{
+	background:#5a7cff;
+	color:#ffffff;
+}
+
+/* CLOSE X INSIDE TAB */
+
+.tab-close{
+	position:absolute;
+	right:8px;
+	top:50%;
+	transform:translateY(-50%);
+	font-size:14px;
+	cursor:pointer;
+	opacity:0.7;
+}
+
+.tab-close:hover{
+	opacity:1;
+}
+
+/*
+========================================
+IFRMAE
+========================================
+These properties correspond to the sizing,
+shape, and layout of the primary viewport
+that is used for this client. Without it,
+you would not be able to see any webpages.
+*/
+
+#viewer{
+	width:100%;
+	height:calc(100vh - 56px);
+	border:none;
+	display:block;
+	background:#ffffff;
+}
+</style>
