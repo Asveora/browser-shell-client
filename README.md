@@ -10,7 +10,7 @@ The entire shell experience is extremely lightweight (under 1 MB) and runs direc
 
 Yes, I understand this is basically a mini-browser inside of a full-fledged browser, but it lays the foundation for what is to come in the future!
 
-## About the Licenses
+# About the Licenses
 
 This repository is dual-licensed under the **GNU General Public License v3.0 (GPLv3)** and the **Asveora Commercial License Agreement (ACLA)**.
 
@@ -20,7 +20,7 @@ By using this software, you agree that your usage must comply with **at least on
 
 For full details, please refer to the `LICENSE-GPLv3` and `ACLA` license files included in this repository.
 
-## So what does this actually do?
+# So what does this actually do?
 
 The Asveora Shell Client acts as a simple navigation layer for the Asveora Ecosystem.
 
@@ -34,7 +34,7 @@ It allows you to:
 
 Think of it as a **GPS for Asveora**, built right in your browser.
 
-## How to Use This Client
+# How to Use This Client
 
 Getting started is very simple:
 
@@ -45,7 +45,7 @@ Getting started is very simple:
 
 That’s it! No complicated build steps, no software installs, and no dependencies.
 
-## First-Time Setup
+# First-Time Setup
 
 When you open the shell for the first time (or after a reset), you will be prompted to:
 
@@ -56,7 +56,7 @@ These are stored locally in your browser so you don’t have to enter them every
 
 You can update them later using the **Switch Profile** or **Switch LandHub** options in the dropdown menu.
 
-## What You Can Look Forward To
+# What You Can Look Forward To
 
 * Clean browser-shell interface
 * Built-in tab system (add/remove tabs freely)
@@ -65,7 +65,7 @@ You can update them later using the **Switch Profile** or **Switch LandHub** opt
 * Lightweight local storage (nothing is sent to a server)
 * Fast startup with zero dependencies (truly lightning fast)
 
-## Privacy Notice
+# Privacy Notice
 
 All data (Profile and LandHub settings) is stored **locally in your browser only**.
 
@@ -77,7 +77,7 @@ If someone is telling you to paste something in the DevTools console or telling 
 
 You do NOT enter any credentials into this client. Asveora has no native "login" service anywhere in its Framework or Ecosystem. All you're inputting are web addresses that you want to use which are just your Asveora Profile Address and the address of your preferred LandHub.
 
-## Why was this shell client made?
+# Why was this shell client made?
 
 This shell client was made because this is what I (AmzroSevca) am capable of building right now. This project is intentionally lightweight and experimental since I am not a full-fledged app developer by any means.
 
@@ -89,7 +89,7 @@ It is designed to be:
 
 It is not a full operating system or PWA framework. It is just meant to be a clean and simple browser shell for navigation.
 
-## Why not make a real client?
+# Why not make a real client?
 
 That is the goal someday! However I currently do not possess the skillset or knowledge to build a feature-rich client and have a lot going on. I am maintaining the entire Asveora Framework along with the Asveora Ecosystem, RFC stack, and a lot of other moving parts. So this is the best that I could come up with for the time being. I imagine native clients for desktop and mobile devices will come in due time when more developers join the Asveora project.
 
